@@ -1,0 +1,36 @@
+/* Hero */
+.hero{
+    background-image: url("/public/hero.webp");
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;  
+    
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+h1{
+    font-family: "Fredericka the Great", serif;
+    font-size: 4rem;
+    color: #75a5cf;
+    text-shadow: 0.5rem 0.5rem 1rem #b49c86;
+    letter-spacing: 0.3rem;
+    padding: 1rem 0;  
+    margin: 1.5rem;
+    
+ }
+
+ .hero-h2{
+    font-family: "Fredericka the Great", serif;
+    font-size: 3rem;    
+    text-shadow: 0.5rem 0.5rem 1rem #b4c0cd;
+    letter-spacing: 0.3rem;
+    padding: 1rem 0;    
+    
+ }

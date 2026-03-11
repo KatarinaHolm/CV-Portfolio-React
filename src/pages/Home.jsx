@@ -1,3 +1,4 @@
+import "./Home.css";
 import EasterEgg from "../components/EasterEggModal";
 
 export default function Home() {
