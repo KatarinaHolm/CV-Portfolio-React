@@ -1,5 +1,6 @@
 import "./Home.css";
 import EasterEgg from "../components/EasterEggModal";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -50,6 +51,7 @@ export default function Home() {
         </section>
       </main>
       {/* Footer */}
+      <Footer />
     </>
   );
 }

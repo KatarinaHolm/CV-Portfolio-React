@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="center">
         <a href="https://www.linkedin.com/in/katarina-holm-14aa4a325/">
           <img
-            src="/icons/github.svg"
+            src="icons/GitHub_Invertocat_Black_Clearspace.svg"
             alt="GitHub logo"
             className="logo"
           />
