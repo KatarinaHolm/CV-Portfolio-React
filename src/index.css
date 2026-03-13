@@ -76,56 +76,6 @@ nav a:active, .btn:active{
     border-bottom: 2px solid #dec091;
 }
 
-
-
-
-/* Portfolio */
-.grid-portfolio{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    gap: 2rem;
-}
-
-.project-image{
-    border-width: 1rem 1rem 3rem 1rem;
-    border-color: white;
-    border-style: solid;    
-    box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
-    border-radius: 0.1rem;
-    display: block;
-    width: 100%;   
-    margin: 1.2rem auto;
-}
-
-.card, .grid-item, .cv-item {
-    padding: 1.5rem;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-}
-
-.card h4{    
-    color: #737089;      
-}
-
-.btn{ 
-    display: inline-block;   
-    margin-top: 0.5rem;
-    padding: 0.8rem;  
-    border-radius: 0.2rem; 
-    text-decoration: none; 
-    color: black;
-    background-color: #dec091;
-    letter-spacing: 0.05rem;
-    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
-    align-self: flex-end;
-    width: fit-content;
-    transition: transform 0.4s ease;
-}
-
-
 /* CV */
 .cv{    
     display: grid;

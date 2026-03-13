@@ -1,6 +1,7 @@
 import EasterEgg from "../components/EasterEggModal.jsx"
 import Footer from "../components/Footer.jsx"
-// import "./Portfolio.css"
+import "./Portfolio.css"
+import "../components/Modal.css"
 
 export default function Portfolio() {
   return (
@@ -12,7 +13,7 @@ export default function Portfolio() {
           <div className="card">
             <img
               className="project-image"
-              src="images/TheTeamGenerator.webp"
+              src="/TheTeamGenerator.webp"
               alt="bild av meny i konsolapp The Team Generator"
             />
             <h3>The Team Generator</h3>
@@ -28,7 +29,7 @@ export default function Portfolio() {
               </a>
               <img
                 className="project-image"
-                src="images/TheTeamGenerator.webp"
+                src="/TheTeamGenerator.webp"
                 alt="bild av meny i konsolapp The Team Generator"
               />
               <div className="modal-text">
@@ -39,7 +40,7 @@ export default function Portfolio() {
                   workshops. Vi hade nyligen börjat arbeta med objektorienterad
                   programmering, och projektet blev ett perfekt tillfälle att
                   öva på att skapa klasser och strukturera ett program i flera
-                  moduler.{" "}
+                  moduler.
                 </p>
                 <p>
                   Resultatet blev en konsolapplikation i C# med funktioner för
@@ -54,7 +55,7 @@ export default function Portfolio() {
           <div className="card">
             <img
               className="project-image"
-              src="images/Klipp & Style Salong.webp"
+              src="/Klipp & Style Salong.webp"
               alt="bild på kod för endpoint"
             />
             <h3>Klipp &amp; Style Salong</h3>
@@ -70,7 +71,7 @@ export default function Portfolio() {
               </a>
               <img
                 className="project-image"
-                src="images/Klipp & Style Salong.webp"
+                src="/Klipp & Style Salong.webp"
                 alt="bild på kod för endpoint"
               />
               <div className="modal-text">
@@ -80,14 +81,14 @@ export default function Portfolio() {
                   för hur man bygger upp ett API från grunden med Code First i
                   Entity Framework Core och Minimal API i .NET. Modellen Booking
                   skapades i koden och jag lät sedan Entity Framework generera
-                  databasen med hjälp av migrationer.{" "}
+                  databasen med hjälp av migrationer.
                 </p>
                 <p>
                   API:et är byggt som ett Minimal API med validering av
                   inkommande data. Jag använder en DTO för att kontrollera
                   vilken information som skickas till klienten, vilket gav mig
                   en bättre förståelse för hur man separerar interna modeller
-                  från det som exponeras utåt.{" "}
+                  från det som exponeras utåt.
                 </p>
                 <p>
                   I DbContext har jag lagt in seed-data för att snabbt kunna
@@ -102,7 +103,7 @@ export default function Portfolio() {
           <div className="card">
             <img
               className="project-image"
-              src="images/CIBA.webp"
+              src="/CIBA.webp"
               alt="bild av meny i konsolapp CIBA"
             />
             <h3>C# Investeringsbank AB</h3>
@@ -118,7 +119,7 @@ export default function Portfolio() {
               </a>
               <img
                 className="project-image"
-                src="images/CIBA.webp"
+                src="/CIBA.webp"
                 alt="bild av meny i konsolapp CIBA"
               />
               <div className="modal-text">
@@ -151,7 +152,7 @@ export default function Portfolio() {
           <div className="card">
             <img
               className="project-image"
-              src="images/Raceboden.webp"
+              src="/Raceboden.webp"
               alt="bild av landningssida för Raceboden"
             />
             <h3>Raceboden</h3>
@@ -167,7 +168,7 @@ export default function Portfolio() {
               </a>
               <img
                 className="project-image"
-                src="images/Raceboden.webp"
+                src="/Raceboden.webp"
                 alt="bild av landningssida för Raceboden"
               />
               <div className="modal-text">
@@ -200,7 +201,7 @@ export default function Portfolio() {
           <div className="card">
             <img
               className="project-image"
-              src="images/Hangman.webp"
+              src="/Hangman.webp"
               alt="bild av spel Hänga gubbe i konsolapp"
             />
             <h3>Hänga gubbe</h3>
@@ -216,7 +217,7 @@ export default function Portfolio() {
               </a>
               <img
                 className="project-image"
-                src="images/Hangman.webp"
+                src="/Hangman.webp"
                 alt="bild av spel Hänga gubbe i konsolapp"
               />
               <div className="modal-text">
@@ -250,7 +251,7 @@ export default function Portfolio() {
           <div className="card">
             <img
               className="project-image"
-              src="images/Gymnasieskola.webp"
+              src="/Gymnasieskola.webp"
               alt="bild av meny i konsolapp för Gymnasieskola"
             />
             <h3>Databassystem för gymnasium</h3>
@@ -266,7 +267,7 @@ export default function Portfolio() {
               </a>
               <img
                 className="project-image"
-                src="images/Gymnasieskola.webp"
+                src="/Gymnasieskola.webp"
                 alt="bild av meny i konsolapp för Gymnasieskola"
               />
               <div className="modal-text">
