@@ -63,21 +63,8 @@ export default function Cv() {
                 färdigheter i verkliga projekt.
               </p>
             </div>
-            <div className="cv-item cv-utbildning">
-              <h3>Utbildning</h3>
-              <p className="years">2025 – 2027</p>
-              <h4>Chas Academy, Stockholm</h4>
-              <ul className="last-element">
-                <li>Fullstack .NET</li>
-                <li>400 yh-poäng</li>
-              </ul>
-              <p className="years">2009 – 2013</p>
-              <h4>Karolinska Institutet</h4>
-              <ul className="last-element">
-                <li>Logopedprogrammet</li>
-                <li>240 hp</li>
-              </ul>
-            </div>
+            {/* Utbildning */}
+            
             <div className="cv-item cv-arbete">
               <h3>Arbetslivserfarenhet</h3>
               <div className="flex-card">
