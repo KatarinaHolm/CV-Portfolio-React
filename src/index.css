@@ -320,33 +320,7 @@ figure{
 }
 
 
-/* Footer */
-.center{
-    display: flex;
-    margin: 1.5rem auto 0 auto;
-    width: 67%;
-    justify-content: center;
-    align-items: center;
-}
 
-.logo{   
-    width: 3rem;
-    margin: 2rem 1rem;
-    position: center;    
-    transition: transform 0.4s ease;
-}
-
-.logo:hover{
-    transform: scale(1.1);    
-}
-
-.logo:active{    
-    transform: scale(0.9);    
-}
-
-.in{
-    padding: 0.4rem
-}
 
 
 /* Storskärm */
