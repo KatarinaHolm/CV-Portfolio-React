@@ -1,3 +1,5 @@
+import Education from "../components/Education.jsx";
+import Experience from "../components/WorkExperience.jsx";
 import EasterEgg from "../components/EasterEggModal";
 import Footer from "../components/Footer";
 import "./Cv.css";
@@ -14,7 +16,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon"
-                  src="images/icons/envelope-at-fill.svg"
+                  src="/icons/envelope-at-fill.svg"
                   alt="mail icon"
                 />
                 <a href="mailto:katarinaholm89@gmail.com">
@@ -24,7 +26,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon map"
-                  src="images/icons/geo-alt-fill.svg"
+                  src="/icons/geo-alt-fill.svg"
                   alt="map needle icon"
                 />
                 <p>Stockholm, Sverige</p>
@@ -32,7 +34,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon gitHub"
-                  src="images/icons/GitHub_Invertocat_Black_Clearspace.svg"
+                  src="/icons/GitHub_Invertocat_Black_Clearspace.svg"
                   alt="github icon"
                 />
                 <a className="a-print" href="https://github.com/KatarinaHolm">
@@ -42,7 +44,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon"
-                  src="images/icons/linkedin-svgrepo-com.svg"
+                  src="/icons/linkedin-svgrepo-com.svg"
                   alt="linkedin icon"
                 />
                 <a
@@ -64,50 +66,11 @@ export default function Cv() {
               </p>
             </div>
             {/* Utbildning */}
-            
-            <div className="cv-item cv-arbete">
-              <h3>Arbetslivserfarenhet</h3>
-              <div className="flex-card">
-                <h4>Region Stockholm</h4>
-                <p className="years">2018 Aug - pågående</p>
-              </div>
-              <h5>Logoped / handledare</h5>
-              <ul>
-                <li>
-                  Handledde föräldrar i färdighetsträning för barn med autism
-                  och/eller intellektuell funktionsnedsättning
-                </li>
-                <li>
-                  Ledde kurser och nätverksträffar för föräldrar och närstående
-                </li>
-                <li>Samarbete och kommunikation med tvärprofessionella team</li>
-              </ul>
-              <div className="flex-card">
-                <h4>Karolinska Institutet</h4>
-                <p className="years">2016 Aug – 2018 Juni</p>
-              </div>
-              <h5>Forsknings- och projektassistent</h5>
-              <ul>
-                <li>Rekryterade deltagare och genomförde inspelningar</li>
-                <li>Bearbetade och analyserade insamlat material</li>
-                <li>Administrativa och organisatoriska uppgifter/li&gt;</li>
-              </ul>
-              <div className="flex-card">
-                <h4>Röstkonsulten AB</h4>
-                <p className="years">2013 Aug – 2016 Aug</p>
-              </div>
-              <h5>Logoped</h5>
-              <ul>
-                <li>
-                  Bedömning och intervention av barn med tal- och språkstörning
-                  samt vuxna med röststörning
-                </li>
-                <li>
-                  Dokumentation och journalföring enligt evidensbaserat
-                  arbetssätt
-                </li>
-              </ul>
-            </div>
+            <Education />
+
+           {/* Arbete */}
+           <Experience />
+
             <div className="cv-item cv-teknik">
               <h3>Tekniska färdigheter</h3>
               <ul>
