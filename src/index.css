@@ -25,6 +25,11 @@ body{
     margin: auto;
 }
 
+/* Easter egg - till footer.css ?*/
+.easter-egg1{
+    background-color: #B6D1E7;
+}
+
 /* Navigation menu */
 nav{
     display: flex;
@@ -46,7 +51,7 @@ nav a{
 }
 
    
-nav a:hover, .btn:hover, .modal-close:hover{    
+nav a:hover, .btn:hover{    
     transform: scale(1.1);    
 }
 
@@ -54,7 +59,7 @@ nav a:hover, .btn:hover, .modal-close:hover{
     transform: scale(1.2);    
 }
 
-nav a:active, .btn:active, .modal-close:active{    
+nav a:active, .btn:active{    
     transform: scale(0.9);    
 }
 
@@ -120,65 +125,6 @@ nav a:active, .btn:active, .modal-close:active{
     transition: transform 0.4s ease;
 }
 
-/* Modal - Portfolio */
-.modal{
-    position: fixed;
-    inset: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-
-    visibility: hidden;
-    opacity: 0;
-}
-
-.modal:target{
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal-content{
-    display: grid;
-    grid-template-columns: 3fr 4fr;
-    gap: 3rem;
-    background-color:#dec091;
-       
-    width: min(950px, 90%);
-    padding: 3rem;
-    border-radius: 0.2rem;
-    position: relative;  
-    
-    max-height: 90vh;
-    overflow-y: auto;
-}
-
-.modal-content .project-image{
-    align-self: center;
-}
-
-.modal-text{
-    padding: 1rem;
-    background-color: #daceb5;
-    box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.modal-text h3{
-    color: #5090cb;
-}
-
-.modal-close{
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0.5rem;
-    text-decoration: none;
-    font-size: 2.5rem;   
-    padding: 0 0.2rem;
-    color: #737089; 
-    transition: transform 0.4s ease;
-}
 
 /* CV */
 .cv{    
@@ -301,7 +247,7 @@ nav a:active, .btn:active, .modal-close:active{
 }
 
 /* About me  + short facts på Home */
-.about-me, .short-facts{    
+.about-me {    
     display: grid;
     grid-template-columns: 2fr 3fr;    
 }
@@ -318,10 +264,6 @@ figure{
     box-shadow:  3px 3px 2px rgba(0, 0, 0, 0.2);
     width: 100%;   
 }
-
-
-
-
 
 /* Storskärm */
 @media (min-width: 1800px) {
@@ -422,35 +364,6 @@ nav{
     .a-print::after{
         content: ": " attr(href);
     } 
-}
-
-
-/* Easter eggs */
-.easter-egg1{
-    background-color: #B6D1E7;
-}
-
-/* Easter egg 2 */
-.easteregg2-show{
-    visibility: visible;
-    opacity: 1;
-}
-
-.easteregg2-content{
-    display: flex;
-    flex-direction: column;    
-    
-    background-color: #daceb5;
-       
-    width: min(550px, 85%);
-    padding: 1.5rem;
-    border-radius: 0.2rem;
-    position: relative;     
-}
-
-.easteregg2-content h4{
-    color:#5090cb;
-    font-size: 1.3rem;
 }
 
 @page {

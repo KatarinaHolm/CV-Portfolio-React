@@ -1,6 +1,10 @@
+import "./Modal.css"
+import "./EastereggModal.css"
 
 export default function EasterEgg(){
 
+    //JS code here
+    
     return(
         <div className="modal easteregg2">
             <div className="easteregg2-content">

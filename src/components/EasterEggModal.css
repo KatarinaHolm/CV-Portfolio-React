@@ -1,0 +1,22 @@
+/* Easter egg modal */
+.easteregg2-show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.easteregg2-content{
+    display: flex;
+    flex-direction: column;    
+    
+    background-color: #daceb5;
+       
+    width: min(550px, 85%);
+    padding: 1.5rem;
+    border-radius: 0.2rem;
+    position: relative;     
+}
+
+.easteregg2-content h4{
+    color:#5090cb;
+    font-size: 1.3rem;
+}
