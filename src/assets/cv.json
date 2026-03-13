@@ -1,0 +1,66 @@
+{
+    "education": [
+        {
+            "years": "2025 – 2027",
+            "school": "Chas Academy, Stockholm",
+            "orientation": "Fullstack .NET",
+            "credits": "400 yh-poäng"
+        },
+         {
+            "years": "2009 – 2013",
+            "school": "Karolinska Institutet",
+            "orientation": "Logopedprogrammet",
+            "credits": "240 hp"
+        }
+    ],
+
+    "workplace": [
+        {
+            "employer": "Region Stockholm",
+            "years": "2018 Aug - pågående",
+            "title": "Logoped / handledare",
+            "tasks": [
+                {"description": "Handledde föräldrar i färdighetsträning för barn med autism och/eller intellektuell funktionsnedsättning"},
+                {"description": "Ledde kurser och nätverksträffar för föräldrar och närstående"},
+                {"description": "Samarbete och kommunikation med tvärprofessionella team"}
+            ]
+        },
+         {
+            "employer": "Region Stockholm",
+            "years": "2018 Aug - pågående",
+            "title": "Logoped / handledare",
+            "tasks": [
+                {"description": "Handledde föräldrar i färdighetsträning för barn med autism och/eller intellektuell funktionsnedsättning"},
+                {"description": "Ledde kurser och nätverksträffar för föräldrar och närstående"},
+                {"description": "Samarbete och kommunikation med tvärprofessionella team"}
+            ]
+        }
+    ]
+}
+ <div className="flex-card">
+                <h4>Karolinska Institutet</h4>
+                <p className="years">2016 Aug – 2018 Juni</p>
+              </div>
+              <h5>Forsknings- och projektassistent</h5>
+              <ul>
+                <li>Rekryterade deltagare och genomförde inspelningar</li>
+                <li>Bearbetade och analyserade insamlat material</li>
+                <li>Administrativa och organisatoriska uppgifter/li&gt;</li>
+              </ul>
+              <div className="flex-card">
+                <h4>Röstkonsulten AB</h4>
+                <p className="years">2013 Aug – 2016 Aug</p>
+              </div>
+              <h5>Logoped</h5>
+              <ul>
+                <li>
+                  Bedömning och intervention av barn med tal- och språkstörning
+                  samt vuxna med röststörning
+                </li>
+                <li>
+                  Dokumentation och journalföring enligt evidensbaserat
+                  arbetssätt
+                </li>
+              </ul>
+            </div>
+
