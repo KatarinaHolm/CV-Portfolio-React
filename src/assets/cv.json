@@ -1,0 +1,49 @@
+{
+    "educations": [
+        {
+            "years": "2025 – 2027",
+            "school": "Chas Academy, Stockholm",
+            "orientation": "Fullstack .NET",
+            "credits": "400 yh-poäng"
+        },
+         {
+            "years": "2009 – 2013",
+            "school": "Karolinska Institutet",
+            "orientation": "Logopedprogrammet",
+            "credits": "240 hp"
+        }
+    ],
+
+    "workplaces": [
+        {
+            "employer": "Region Stockholm",
+            "years": "2018 Aug - pågående",
+            "title": "Logoped / handledare",
+            "tasks": [
+                {"description": "Handledde föräldrar i färdighetsträning för barn med autism och/eller intellektuell funktionsnedsättning"},
+                {"description": "Ledde kurser och nätverksträffar för föräldrar och närstående"},
+                {"description": "Samarbete och kommunikation med tvärprofessionella team"}
+            ]
+        },
+         {
+            "employer": "Karolinska Institutet",
+            "years": "2016 Aug – 2018 Juni",
+            "title": "Forsknings- och projektassistent",
+            "tasks": [
+                {"description": "Rekryterade deltagare och genomförde inspelningar"},
+                {"description": "Bearbetade och analyserade insamlat material"},
+                {"description": "Administrativa och organisatoriska uppgifter"}
+            ]
+        },
+        {
+            "employer": "Röstkonsulten AB",
+            "years": "2013 Aug – 2016 Aug",
+            "title": "Logoped",
+            "tasks": [
+                {"description": "Bedömning och intervention av barn med tal- och språkstörning samt vuxna med röststörning"},
+                {"description": "Dokumentation och journalföring enligt evidensbaserat arbetssätt"}
+            ]
+        }
+    ]
+}
+

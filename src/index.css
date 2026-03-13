@@ -25,6 +25,11 @@ body{
     margin: auto;
 }
 
+/* Easter egg - till footer.css ?*/
+.easter-egg1{
+    background-color: #B6D1E7;
+}
+
 /* Navigation menu */
 nav{
     display: flex;
@@ -46,7 +51,7 @@ nav a{
 }
 
    
-nav a:hover, .btn:hover, .modal-close:hover{    
+nav a:hover, .btn:hover{    
     transform: scale(1.1);    
 }
 
@@ -54,7 +59,7 @@ nav a:hover, .btn:hover, .modal-close:hover{
     transform: scale(1.2);    
 }
 
-nav a:active, .btn:active, .modal-close:active{    
+nav a:active, .btn:active{    
     transform: scale(0.9);    
 }
 
@@ -71,284 +76,6 @@ nav a:active, .btn:active, .modal-close:active{
     border-bottom: 2px solid #dec091;
 }
 
-
-
-
-/* Portfolio */
-.grid-portfolio{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    gap: 2rem;
-}
-
-.project-image{
-    border-width: 1rem 1rem 3rem 1rem;
-    border-color: white;
-    border-style: solid;    
-    box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
-    border-radius: 0.1rem;
-    display: block;
-    width: 100%;   
-    margin: 1.2rem auto;
-}
-
-.card, .grid-item, .cv-item {
-    padding: 1.5rem;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-}
-
-.card h4{    
-    color: #737089;      
-}
-
-.btn{ 
-    display: inline-block;   
-    margin-top: 0.5rem;
-    padding: 0.8rem;  
-    border-radius: 0.2rem; 
-    text-decoration: none; 
-    color: black;
-    background-color: #dec091;
-    letter-spacing: 0.05rem;
-    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
-    align-self: flex-end;
-    width: fit-content;
-    transition: transform 0.4s ease;
-}
-
-/* Modal - Portfolio */
-.modal{
-    position: fixed;
-    inset: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-
-    visibility: hidden;
-    opacity: 0;
-}
-
-.modal:target{
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal-content{
-    display: grid;
-    grid-template-columns: 3fr 4fr;
-    gap: 3rem;
-    background-color:#dec091;
-       
-    width: min(950px, 90%);
-    padding: 3rem;
-    border-radius: 0.2rem;
-    position: relative;  
-    
-    max-height: 90vh;
-    overflow-y: auto;
-}
-
-.modal-content .project-image{
-    align-self: center;
-}
-
-.modal-text{
-    padding: 1rem;
-    background-color: #daceb5;
-    box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.modal-text h3{
-    color: #5090cb;
-}
-
-.modal-close{
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0.5rem;
-    text-decoration: none;
-    font-size: 2.5rem;   
-    padding: 0 0.2rem;
-    color: #737089; 
-    transition: transform 0.4s ease;
-}
-
-/* CV */
-.cv{    
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(9, auto);
-   
-}
-
-.flex-card{
-    margin-top: 0.5rem ;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.cv h3{
-    margin-bottom: 1rem;
-}
-
-.cv h5{
-    font-size: 1rem;
-}
-
-.cv li{    
-    padding-bottom: 0.6rem;    
-}
-
-.years{
-    color: #737089;    
-}
-
-.last-element{
-    margin-bottom: 1rem;
-}
-
-.contact-flex-items{
-    display: flex;
-}
-
-.contact-flex-items a, .contact-flex-items p{
-    margin: 0.5rem 0;
-    text-decoration: none;
-    color: black;
-}
-
-.cv-icon{   
-    width: 1.2rem;  
-    padding: 2px;  
-    margin-right: 0.5rem;  
-}
-
-.cv-kontakt a{
-    transition: border-bottom 0.4s ease, scale 0.4s ease,;
-    border-bottom: 2px solid transparent;
-}
-
-.cv-kontakt a:hover{
-    border-bottom: 2px solid black;    
-}
-
-.cv-kontakt a:active{
-    transform: scale(0.9);
-}
-
-.map{
-    padding: 1px;
-}
-
-.gitHub{
-    padding: 0;
-}
-
-/* CV-rutor */
-.cv-kontakt{
-    grid-row: 1 / 3;
-    grid-column: 1 / 2;
-    border-bottom: 1px solid #b4c0cd;
-}
-
-.cv-profil{
-    grid-row: 1 / 3;
-    grid-column: 2 / 3;
-    border-bottom: 1px solid #b4c0cd;
-    border-left: 1px solid #b4c0cd;
-}
-
-.cv-utbildning{
-    grid-row: 3 / 6;
-    grid-column: 1 / 2;
-    border-bottom: 1px solid #b4c0cd;
-}
-
-.cv-arbete{
-    grid-row: 3 / 8;
-    grid-column: 2 / 3;
-    border-bottom: 1px solid #b4c0cd;
-    border-left: 1px solid #b4c0cd;
-}
-
-.cv-teknik{
-    grid-row: 6 / 9;
-    grid-column: 1 / 2;
-    border-bottom: 1px solid #b4c0cd;
-}
-
-.cv-kurser{
-    grid-row: 8 / 10;
-    grid-column: 2 / 3;    
-    border-left: 1px solid #b4c0cd;
-}
-
-.cv-kurser h4{    
-    width: 67%;
-}
-
-.cv-språk{
-    grid-row: 9/ 10;
-    grid-column: 1 / 2;
-}
-
-/* About me  + short facts på Home */
-.about-me, .short-facts{    
-    display: grid;
-    grid-template-columns: 2fr 3fr;    
-}
-
-figure{
-    justify-self: center;
-    max-width: 250px;
-    margin: 0;
-}
-
-.profile-image{
-    border-radius: 50%;
-    border: 5px double #5090cb;
-    box-shadow:  3px 3px 2px rgba(0, 0, 0, 0.2);
-    width: 100%;   
-}
-
-
-/* Footer */
-.center{
-    display: flex;
-    margin: 1.5rem auto 0 auto;
-    width: 67%;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo{   
-    width: 3rem;
-    margin: 2rem 1rem;
-    position: center;    
-    transition: transform 0.4s ease;
-}
-
-.logo:hover{
-    transform: scale(1.1);    
-}
-
-.logo:active{    
-    transform: scale(0.9);    
-}
-
-.in{
-    padding: 0.4rem
-}
-
-
 /* Storskärm */
 @media (min-width: 1800px) {
    .container{
@@ -356,6 +83,7 @@ figure{
 } 
 }
 
+/* Mellanskärm*/
 @media (max-width: 1024px){
 nav{   
     margin-right: 0;    
@@ -406,7 +134,7 @@ nav{
     }  
    
 }
-
+/* Utskrift */
 @media print {
     body {
     visibility: hidden;
@@ -417,12 +145,10 @@ nav{
 
     #cv, #portfolio, #about-me {
     visibility: visible;   
-    position: static;
-    /* left: 0;
-    top: 0;
-    height: inherit;   */
+    position: static;   
     width: 100%;   
     }
+
     .cv{
         display: block;
     }
@@ -450,47 +176,10 @@ nav{
     } 
 }
 
-
-/* Easter eggs */
-.easter-egg1{
-    background-color: #B6D1E7;
-}
-
-/* Easter egg 2 */
-.easteregg2-show{
-    visibility: visible;
-    opacity: 1;
-}
-
-.easteregg2-content{
-    display: flex;
-    flex-direction: column;    
-    
-    background-color: #daceb5;
-       
-    width: min(550px, 85%);
-    padding: 1.5rem;
-    border-radius: 0.2rem;
-    position: relative;     
-}
-
-.easteregg2-content h4{
-    color:#5090cb;
-    font-size: 1.3rem;
-}
-
 @page {
     size: A4 portrait;
     margin: 2cm;
 }
 
-/* CSS HEX
---#5090cb: #5090cb;
---#dec091: #dec091;
---#b4c0cd: #b4c0cd;
---#daceb5: #daceb5;
---#9492a6: #9492a6;
---#b49c86: #b49c86;
---#75a5cf: #75a5cf;
 
 
