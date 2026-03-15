@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+// OBS! lägg till meddelande om laddar innehåll!
 export default function GitHubPortfolio() {
   const [repos, setRepos] = useState([]);
 
@@ -26,8 +27,8 @@ export default function GitHubPortfolio() {
               <div className="card">
                 {/* <img
                 className="project-image"
-                src="/TheTeamGenerator.webp"
-                alt="bild av meny i konsolapp The Team Generator"
+                src="/nånting.webp"
+                alt="bild"
                 /> */}
                 <h3>{repo.name}</h3>
                 <h4>{repo.description}</h4>
