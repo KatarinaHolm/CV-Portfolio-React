@@ -2,6 +2,7 @@ import "./Modal.css"
 import "./EastereggModal.css"
 
 export default function EasterEgg(){
+    
 
     //JS code here
     
@@ -17,3 +18,34 @@ export default function EasterEgg(){
         </div>
     );
 }
+
+// Easter egg 2
+
+index = 0;
+const secretWord = ".net";
+const easterEggModal = document.querySelector(".easteregg2")
+
+function findEgg(event){
+   
+    if(secretWord[index] === event.key){
+        
+        index++;
+
+        if(index === secretWord.length){
+                        
+            easterEggModal.classList.toggle("easteregg2-show");
+        
+            index = 0;
+        }
+    }
+
+    else{
+        index = 0;
+    }     
+}
+
+// window.addEventListener("keydown", findEgg);
+
+
+//close Easter egg popup
+
