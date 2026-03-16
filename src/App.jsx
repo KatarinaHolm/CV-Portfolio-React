@@ -3,45 +3,48 @@ import About from "./pages/About.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import Cv from "./pages/Cv.jsx";
 import GitHub from "./components/GitHubPortfolio.jsx";
-import { useEffect } from "react";
+import EasterEgg from "./components/EasterEggModal.jsx";
+import {useState, useEffect, useRef } from "react";
 
-function closeEasterEgg(){
-    const easterEggClose = document.querySelector(".easteregg-close");
-    easterEggModal.classList.remove("easteregg2-show");
-}
 
-easterEggClose.addEventListener("click", closeEasterEgg);
+
+
 
 function App() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     window.addEventListener("keydown", findEgg);
+
+    return () => {
+      window.removeEventListener("keydown", findEgg);
+
+    }
   }, []);
-  let index = 0;
+ 
+  const sequenceIndex = useRef(0);
+  const secretWord = ".net";
 
   function findEgg(event){
-  
-  const secretWord = ".net";
-    if(secretWord[index] === event.key){
+   
+    if(secretWord[sequenceIndex.current] === event.key){
         
-        index++;
+        sequenceIndex.current++;
 
-        if(index === secretWord.length){
+        if(sequenceIndex.current === secretWord.length){
                         
-            setShowModal(true);
-        
-            index = 0;
+          setShowModal(true);        
+           sequenceIndex.current = 0;
         }
     }
-
     else{
-        index = 0;
+        sequenceIndex.current = 0;
     }     
-};
-  
+}
 
-
+  function onClose(){
+    setShowModal(false);
+  };
 
   return (
     <>
@@ -50,7 +53,7 @@ function App() {
      {/* <Portfolio /> */}
      {/* <Cv /> */}
      <GitHub />
-    
+    {showModal && <EasterEgg onClose={onClose} />}
     </>
   )
 }
