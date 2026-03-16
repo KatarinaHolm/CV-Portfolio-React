@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 
+// OBS! lägg till meddelande om laddar innehåll!
 export default function GitHubPortfolio() {
   const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   async function GetRepos() {
     const response = await fetch(
@@ -10,11 +12,22 @@ export default function GitHubPortfolio() {
     const data = await response.json();
     
     setRepos(data);
+    setLoading(false);
   }
 
   useEffect(() => {
     GetRepos();
   }, []);
+
+  if(loading){
+    return (
+      <>
+        <h2>GitHub-portfolio</h2>
+        <p>Laddar innehåll, var god vänta...</p>
+      </>
+    
+    )
+  }
 
   return (
     <>
@@ -26,8 +39,8 @@ export default function GitHubPortfolio() {
               <div className="card">
                 {/* <img
                 className="project-image"
-                src="/TheTeamGenerator.webp"
-                alt="bild av meny i konsolapp The Team Generator"
+                src="/nånting.webp"
+                alt="bild"
                 /> */}
                 <h3>{repo.name}</h3>
                 <h4>{repo.description}</h4>
