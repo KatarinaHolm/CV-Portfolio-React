@@ -4,14 +4,15 @@ export default function Home() {
   return (
     <>      
         {/*Hero*/}
+         
+      
+      <main>
         <section className="hero">
           <div className="container">
             <h1>Katarina Holm</h1>
             <h2 className="hero-h2">Fullstack .NET Developer</h2>
           </div>
-        </section>      
-      
-      <main>
+        </section>     
         <section id="short-facts" className="container">
           <h2>I korthet</h2>
           <div className="short-facts">
