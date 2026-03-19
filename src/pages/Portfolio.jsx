@@ -1,7 +1,9 @@
-import EasterEgg from "../components/EasterEggModal.jsx"
-import Footer from "../components/Footer.jsx"
+
 import "./Portfolio.css"
 import "../components/Modal.css"
+import GitHub from "../components/GitHubPortfolio";
+
+// Obs! Ladda upp från GitHub
 
 export default function Portfolio() {
   return (
@@ -297,13 +299,7 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-
-        {/* Easter egg */}
-        <EasterEgg />
       </main>
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 }

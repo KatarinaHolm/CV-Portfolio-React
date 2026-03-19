@@ -1,7 +1,5 @@
 import Education from "../components/Education.jsx";
 import Experience from "../components/WorkExperience.jsx";
-import EasterEgg from "../components/EasterEggModal";
-import Footer from "../components/Footer";
 import "./Cv.css";
 
 export default function Cv() {
@@ -107,12 +105,8 @@ export default function Cv() {
               </ul>
             </div>
           </div>
-        </div>
-        {/* Easter egg */}
-        <EasterEgg />
-      </main>
-      {/* Footer */}
-      <Footer />
+        </div>      
+      </main>     
     </>
   );
 }

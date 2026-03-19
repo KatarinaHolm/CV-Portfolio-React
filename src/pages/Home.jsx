@@ -1,20 +1,15 @@
 import "./Home.css";
-import EasterEgg from "../components/EasterEggModal";
-import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <>
-      <header>
-        {/*NavBar  */}
+    <>      
         {/*Hero*/}
-        <section class="hero">
-          <div class="container">
+        <section className="hero">
+          <div className="container">
             <h1>Katarina Holm</h1>
-            <h2 class="hero-h2">Fullstack .NET Developer</h2>
+            <h2 className="hero-h2">Fullstack .NET Developer</h2>
           </div>
-        </section>
-      </header>
+        </section>      
       
       <main>
         <section id="short-facts" className="container">
@@ -45,13 +40,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-
-          {/* Easter egg */}
-          <EasterEgg />
         </section>
       </main>
-      {/* Footer */}
-      <Footer />
+      
     </>
   );
 }

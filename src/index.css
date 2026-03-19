@@ -1,7 +1,7 @@
 /* General CSS */
 *{
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin: 0;
 }
 body{
@@ -67,7 +67,7 @@ nav a:active, .btn:active{
     transform: scale(0.8);    
 }
 
-.currentPage{
+.active{
     border-bottom: 2px solid #dec091;
 }
 

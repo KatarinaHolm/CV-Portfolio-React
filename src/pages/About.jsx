@@ -1,8 +1,6 @@
 import "./About.css"
-import EasterEgg from "../components/EasterEggModal.jsx"
-import Footer from "../components/Footer.jsx"
 
-//OBS! Få bort utrymme uder footer på breda skärmar
+//OBS! Få bort utrymme under footer på breda skärmar
 
 export default function About() {
   return (
@@ -47,12 +45,8 @@ export default function About() {
               </p>
             </div>
           </div>
-        </div>
-        {/* Easter egg */}
-        <EasterEgg />
-      </main>
-      {/* Footer */}
-      <Footer />
+        </div>       
+      </main>    
     </>
   );
 }
