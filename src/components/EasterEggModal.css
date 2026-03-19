@@ -1,8 +1,7 @@
 /* Easter egg modal */
-.modal{
+.easteregg-modal{
     position: fixed;
     inset: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +25,7 @@
     font-size: 1.3rem;
 }
 
-.modal-close{
+.easteregg-close{
     display: inline-block;
     position: absolute;
     top: 0;

@@ -1,4 +1,4 @@
-import "./EastereggModal.css"
+import "./EasterEggModal.css"
 
 export default function EasterEgg({onClose}){
     
@@ -8,11 +8,11 @@ export default function EasterEgg({onClose}){
     }
     
     return(
-        <div className="modal easteregg2">
+        <div className="easteregg-modal">
             <div className="easteregg2-content">
                 <h4>Why do Java developers wear glasses?</h4>
                 <p>Because they can’t C#.</p>
-                <a onClick={closeEasterEgg} href="#" className="modal-close">
+                <a onClick={closeEasterEgg} href="#" className="easteregg-close">
                 ×
                 </a>
             </div>
