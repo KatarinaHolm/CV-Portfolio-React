@@ -1,17 +1,21 @@
 import { useState, useEffect } from "react";
 
-// OBS! lägg till meddelande om laddar innehåll!
+
 export default function GitHubPortfolio() {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const getImageUrl = (repo) => {
+    return `https://raw.githubusercontent.com/KatarinaHolm/${repo.name}/${repo.default_branch}/assets/preview.webp`;
+  };
 
   async function GetRepos() {
     const response = await fetch(
       "https://api.github.com/users/KatarinaHolm/repos",
     );
     const data = await response.json();
-
-    setRepos(data);
+    const filtered = data.filter((repo) => repo.topics?.includes("portfolio"));
+    setRepos(filtered);
     setLoading(false);
   }
 
@@ -28,7 +32,6 @@ export default function GitHubPortfolio() {
     );
   }
 
-
   return (
     <>
       <section className="container">
@@ -36,14 +39,21 @@ export default function GitHubPortfolio() {
         <div className="grid-portfolio">
           {repos.map((repo) => {
             return (
-              <div className="card">
+              <div className="card" key={repo.id}>
                 <img
                   className="project-image"
-                  src="/Klipp & Style Salong.webp"
-                  alt="bild"
+                  src={getImageUrl(repo)}
+                  alt={repo.name}
+                  onError={(event) => {
+                    event.target.onerror = null;
+                    event.target.src = "/Fallback.webp";
+                  }}
                 />
                 <h3>{repo.name}</h3>
-                <h4>{repo.description}</h4>
+                <h4>{repo.language}</h4> 
+                {/* Skriva ut flera språk??? */}
+                {/* Länk till GitHub-repo!! */}
+                {/* repo.html_url */}
               </div>
             );
           })}
