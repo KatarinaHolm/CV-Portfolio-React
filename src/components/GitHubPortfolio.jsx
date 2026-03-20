@@ -15,6 +15,7 @@ export default function GitHubPortfolio() {
     );
     const data = await response.json();
     const filtered = data.filter((repo) => repo.topics?.includes("portfolio"));
+     console.log(filtered);
     setRepos(filtered);
     setLoading(false);
   }
@@ -33,9 +34,7 @@ export default function GitHubPortfolio() {
   }
 
   return (
-    <>
-      <section className="container">
-        <h2>GitHub-portfolio</h2>
+    <>      
         <div className="grid-portfolio">
           {repos.map((repo) => {
             return (
@@ -51,14 +50,23 @@ export default function GitHubPortfolio() {
                 />
                 <h3>{repo.name}</h3>
                 <h4>{repo.language}</h4> 
+                <div className="portfolio-flex-items">
+                  <img
+                  className="link-icon"
+                  src="/icons/GitHub_Invertocat_Black_Clearspace.svg"
+                  alt="github icon"
+                />
+                <a className="github-link" href={repo.html_url}>
+                
+                Se källkod
+              </a>
+              </div>
                 {/* Skriva ut flera språk??? */}
-                {/* Länk till GitHub-repo!! */}
-                {/* repo.html_url */}
+               
               </div>
             );
           })}
         </div>
-      </section>
     </>
   );
 }

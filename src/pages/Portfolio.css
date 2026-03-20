@@ -43,3 +43,34 @@
     width: fit-content;
     transition: transform 0.4s ease;
 }
+
+.portfolio-flex-items{
+    display: flex;
+    align-self: flex-end;
+    width: fit-content;
+}
+
+.github-link{
+    display: inline-block;   
+    text-decoration: none; 
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;  
+    letter-spacing: 0.05rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem #dec091;    
+    transition: border-bottom 0.4s ease, scale 0.4s ease,;
+    border-bottom: 1px solid transparent;
+}
+   
+    .github-link:hover{
+        border-bottom: 1px solid black;    
+    }
+
+    .github-link:active{
+        transform: scale(0.9);
+    }
+
+    .link-icon{     
+    width: 1.5rem;        
+    margin-right: 0.5rem;  
+    }
