@@ -57,7 +57,7 @@ export default function GitHubPortfolio() {
                 />
                 <a className="github-link" href={repo.html_url}>
                 
-                Se källkod
+                Se kod
               </a>
               </div>
                 {/* Skriva ut flera språk??? */}
