@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Footer.css"
+import GitHub from "../assets/icons/GitHub_Invertocat_Black_Clearspace.svg"
+import Linkedin from "../assets/icons/linkedin-svgrepo-com.svg"
 
 export default function Footer() {
   const [isEggActive, setIsEggActive] = useState(false);
@@ -25,16 +27,16 @@ export default function Footer() {
   return (
     <footer onClick={handleClick}>
       <div className="center">
-        <a href="https://www.linkedin.com/in/katarina-holm-14aa4a325/">
+        <a href= "https://github.com/KatarinaHolm">
           <img
-            src="icons/GitHub_Invertocat_Black_Clearspace.svg"
+            src={GitHub}
             alt="GitHub logo"
             className="logo"
           />
         </a>
-        <a href="https://github.com/KatarinaHolm">
+        <a href="https://www.linkedin.com/in/katarina-holm-14aa4a325/">
           <img
-            src="icons/linkedin-svgrepo-com.svg"
+            src={Linkedin}
             alt="LinkedIn logo"
             className="logo in"
           />

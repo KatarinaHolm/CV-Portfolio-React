@@ -1,6 +1,10 @@
 import Education from "../components/Education.jsx";
 import Experience from "../components/WorkExperience.jsx";
 import "./Cv.css";
+import GitHub from "../assets/icons/GitHub_Invertocat_Black_Clearspace.svg";
+import Linkedin from "../assets/icons/linkedin-svgrepo-com.svg";
+import Needle from "../assets/icons/geo-alt-fill.svg";
+import Mail from "../assets/icons/envelope-at-fill.svg"
 
 export default function Cv() {
   return (
@@ -14,7 +18,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon"
-                  src="icons/envelope-at-fill.svg"
+                  src={Mail}
                   alt="mail icon"
                 />
                 <a href="mailto:katarinaholm89@gmail.com">
@@ -24,7 +28,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon map"
-                  src="icons/geo-alt-fill.svg"
+                  src={Needle}
                   alt="map needle icon"
                 />
                 <p>Stockholm, Sverige</p>
@@ -32,7 +36,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon gitHub"
-                  src="icons/GitHub_Invertocat_Black_Clearspace.svg"
+                  src={GitHub}
                   alt="github icon"
                 />
                 <a className="a-print" href="https://github.com/KatarinaHolm">
@@ -42,7 +46,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon"
-                  src="icons/linkedin-svgrepo-com.svg"
+                  src={Linkedin}
                   alt="linkedin icon"
                 />
                 <a

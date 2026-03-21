@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-
+import GitHub from "../assets/icons/GitHub_Invertocat_Black_Clearspace.svg";
+import Fallback from "../assets/Fallback.webp";
 
 export default function GitHubPortfolio() {
   const [repos, setRepos] = useState([]);
@@ -44,7 +45,7 @@ export default function GitHubPortfolio() {
                   alt={repo.name}
                   onError={(event) => {
                     event.target.onerror = null;
-                    event.target.src = "Fallback.webp";
+                    event.target.src = Fallback;
                   }}
                 />
                 <h3>{repo.name}</h3>
@@ -52,7 +53,7 @@ export default function GitHubPortfolio() {
                 <div className="portfolio-flex-items">
                   <img
                   className="link-icon"
-                  src="icons/GitHub_Invertocat_Black_Clearspace.svg"
+                  src={GitHub}
                   alt="github icon"
                 />
                 <a className="github-link" href={repo.html_url}>

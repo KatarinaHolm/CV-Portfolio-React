@@ -1,6 +1,6 @@
 /* Hero */
 .hero{
-    background-image: url("hero.webp");
+    background-image: url("../assets/hero.webp");
     height: 40rem;
     background-repeat: no-repeat;
     background-size: cover;    

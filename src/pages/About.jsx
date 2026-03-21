@@ -1,4 +1,5 @@
 import "./About.css"
+import ProfileImg from "../assets/profilbild_kvadrat.webp"
 
 //OBS! Få bort utrymme under footer på breda skärmar
 
@@ -12,7 +13,7 @@ export default function About() {
             <figure className="grid-item">
               <img
                 className="profile-image"
-                src="profilbild_kvadrat.webp"
+                src={ProfileImg}
                 alt="Porträttfoto av Katarina"
               />
             </figure>

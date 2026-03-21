@@ -1,5 +1,4 @@
 import "./Portfolio.css";
-import "../components/Modal.css";
 import GitHub from "../components/GitHubPortfolio";
 
 // Obs! Ladda upp från GitHub
