@@ -27,7 +27,6 @@ export default function GitHubPortfolio() {
   if (loading) {
     return (
       <>
-        <h2>GitHub-portfolio</h2>
         <p>Laddar innehåll, var god vänta...</p>
       </>
     );
