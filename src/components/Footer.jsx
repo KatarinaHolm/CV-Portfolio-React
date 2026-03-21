@@ -34,7 +34,7 @@ export default function Footer() {
         </a>
         <a href="https://github.com/KatarinaHolm">
           <img
-            src="/icons/linkedin-svgrepo-com.svg"
+            src="icons/linkedin-svgrepo-com.svg"
             alt="LinkedIn logo"
             className="logo in"
           />

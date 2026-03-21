@@ -14,7 +14,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon"
-                  src="/icons/envelope-at-fill.svg"
+                  src="icons/envelope-at-fill.svg"
                   alt="mail icon"
                 />
                 <a href="mailto:katarinaholm89@gmail.com">
@@ -24,7 +24,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon map"
-                  src="/icons/geo-alt-fill.svg"
+                  src="icons/geo-alt-fill.svg"
                   alt="map needle icon"
                 />
                 <p>Stockholm, Sverige</p>
@@ -32,7 +32,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon gitHub"
-                  src="/icons/GitHub_Invertocat_Black_Clearspace.svg"
+                  src="icons/GitHub_Invertocat_Black_Clearspace.svg"
                   alt="github icon"
                 />
                 <a className="a-print" href="https://github.com/KatarinaHolm">
@@ -42,7 +42,7 @@ export default function Cv() {
               <div className="contact-flex-items">
                 <img
                   className="cv-icon"
-                  src="/icons/linkedin-svgrepo-com.svg"
+                  src="icons/linkedin-svgrepo-com.svg"
                   alt="linkedin icon"
                 />
                 <a

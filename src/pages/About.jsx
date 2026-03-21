@@ -12,7 +12,7 @@ export default function About() {
             <figure className="grid-item">
               <img
                 className="profile-image"
-                src="/profilbild_kvadrat.webp"
+                src="profilbild_kvadrat.webp"
                 alt="Porträttfoto av Katarina"
               />
             </figure>

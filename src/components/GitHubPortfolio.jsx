@@ -44,7 +44,7 @@ export default function GitHubPortfolio() {
                   alt={repo.name}
                   onError={(event) => {
                     event.target.onerror = null;
-                    event.target.src = "/Fallback.webp";
+                    event.target.src = "Fallback.webp";
                   }}
                 />
                 <h3>{repo.name}</h3>
@@ -52,7 +52,7 @@ export default function GitHubPortfolio() {
                 <div className="portfolio-flex-items">
                   <img
                   className="link-icon"
-                  src="/icons/GitHub_Invertocat_Black_Clearspace.svg"
+                  src="icons/GitHub_Invertocat_Black_Clearspace.svg"
                   alt="github icon"
                 />
                 <a className="github-link" href={repo.html_url}>

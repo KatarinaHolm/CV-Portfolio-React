@@ -10,7 +10,7 @@ export default function Portfolio() {
       <main>
         <section id="portfolio" className="container">
           <h2>Portfolio</h2>          
-        <GitHub />
+          <GitHub />
         </section>
       </main>
     </>
